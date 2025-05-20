@@ -13,7 +13,7 @@ header {
     color: white;
 }
 
-p {
+.justified-text {
   text-align: justify;
   text-justify: inter-word;
 }
