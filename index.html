@@ -3,114 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaron Feller | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Aaron Feller is a PhD candidate in Biochemistry at UT Austin researching machine learning for protein and peptide engineering.">
+    <title>Aaron Feller | AI for Molecular Discovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="https://unpkg.com/lucide@latest"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
-    
-    <!-- Hero Section -->
-    <header class="text-center py-4 bg-dark text-white">
-        <img src="profile.jpeg" alt="Aaron Feller" class="rounded-circle" width="120">
-        <h1 class="mt-3">Aaron Feller</h1>
-        <p>PhD Candidate in Computational Biochemistry</p>
-        <p>The University of Texas at Austin</p>
-        <div class="mt-3">
-            <a href="mailto:aaronleefeller@gmail.com" class="text-white me-3">Email</a>
-            <a href="https://github.com/aaronfeller" class="text-white me-3">GitHub</a>
-            <a href="https://linkedin.com/in/aaronleefeller" class="text-white">LinkedIn</a>
-        </div>
-    </header>
-    
-    <div class="container mt-5">
-        <!-- About Section -->
-        <section id="about" class="mb-5">
-            <h2>About Me</h2>
-            <p class="justified-text">I work at the intersection of machine learning and molecular science, focusing on building models that help make sense of complex biological data. My current projects involve developing predictive tools for peptides and designing interpretable systems that bridge the gap between raw sequences and real-world applications.</p>
-            <p class="justified-text">I’m interested in creating tools that are both scientifically rigorous and practically useful—models that can be deployed, not just published. My approach combines computational techniques with a deep understanding of biological systems to uncover patterns and insights that drive innovation in biotech and pharma.</p>        </section>
+    <div class="site-shell">
+        <header class="site-header" id="top">
+            <a class="wordmark" href="#top" aria-label="Aaron Feller home">AF<span>.</span></a>
+            <nav aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+            </nav>
+            <a class="header-contact" href="mailto:aaronleefeller@gmail.com">Contact <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </header>
 
-        <!-- Experience Section -->
-        <section id="experience" class="mb-5">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Graduate Research Assistant</strong>, UT Austin (2022 – Present) - Conducting research on machine learning models for peptide encoding, natural antibiotic discovery, and bioinformatics applications.</li>
-                <li><strong>Co-Founder, BioML Society</strong>, UT Austin (2023 – Present) - Organized industry and academic talks, led a protein engineering hackathon, and taught computational biology lectures.</li>
-                <li><strong>Research Technician</strong>, Arizona State University (2020 – 2021) - Analyzed large protein sequence datasets and supported lab research in bacterial defense systems.</li>
-            </ul>
-        </section>
-        
-        <!-- Publications Section -->
-        <section id="publications" class="mb-5">
-            <h2>Publications</h2>
-            <ul>
-                <li><a href="https://www.biorxiv.org/content/10.64898/2026.01.06.697994v1">PeptideMTR: Scaling SMILES-Based Language Models for Therapeutic Peptide Engineering</a><br><i>Nature Machine Intelligence</i>, in review</li>
-                <li><a href="https://www.nature.com/articles/s41467-025-61151-z">Antibacterial Microcins are Ubiquitous and Functionally Diverse Across Bacterial Communities</a><br><i>Nature Communications</i>, 2025</li>
-                <li><a href="https://joss.theoj.org/papers/10.21105/joss.08319">p2smi: A Python Toolkit for Peptide FASTA-to-SMILES Conversion and Molecular Property Analysis</a><br><i>JOSS</i>, 2025</li>
-                <li><a href="https://doi.org/10.1021/acs.jcim.4c01441">Peptide-Aware Chemical Language Model Successfully Predicts Membrane Diffusion of Cyclic Peptides</a><br><i>Journal of Chemical Information and Modeling</i>, 2025</li>
-                <li><a href="https://doi.org/10.1016/j.patter.2023.100865">Using alternative SMILES representations to identify novel functional analogues</a><br><i>Patterns</i>, 2023</li>
-                <li><a href="https://doi.org/10.1128/aem.01486-22">Evidence for widespread class II microcins in Enterobacterales genomes</a><br><i>Applied and Environmental Microbiology</i>, 2022</li>
-            </ul>
-        </section>
-        
-        <!-- Skills Section -->
-        <section id="skills" class="mb-5">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming & Data Analysis:</strong> Expert in Python, R, and Shell scripting with hands-on experience in HPC environments, virtual screening pipelines, and full-stack data science workflows.</li>
-                <li><strong>Software & Tools:</strong> Power user of PyTorch, PyTorch Lightning, Pandas, NumPy, ggplot2, git, SLURM, LaTeX, and more — efficient across both research and production settings.</li>
-                <li><strong>Research Methods:</strong> Applied machine learning and deep learning with a focus on transformers, statistical modeling, HMMs, and scalable bioinformatics pipelines. Strong emphasis on interpretability and impactful data visualization.</li>
-                <li><strong>Languages:</strong> Fluent in English, conversational in Spanish — comfortable collaborating across linguistic and cultural lines.</li>
-            </ul>
-        </section>
-        
-        <!-- Education Section -->
-        <section id="education" class="mb-5">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>PhD in Biochemistry</strong>, The University of Texas at Austin (2022 – Present)</li>
-                <li><strong>Graduate Certificate in Computational Life Sciences</strong>, Arizona State University (2020 – 2021)</li>
-                <li><strong>Bachelor of Science in Biochemistry</strong>, Arizona State University (2019 – 2020)</li>
-                <li><strong>Bachelor of Arts in English (Creative Writing)</strong>, Arizona State University, Barrett Honors College (2009 – 2013)</li>
-            </ul>
-        </section>
+        <main>
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span></span> Computational biochemistry · Austin, Texas</p>
+                    <h1 id="hero-title">Teaching machines to <em>reason</em> about molecules.</h1>
+                    <p class="hero-intro">I am Aaron Feller, <strong><em>Charles W. Smith Jr. Graduate Fellow</em></strong> at The University of Texas at Austin. 
+                        I build deep learning systems for biological and therapeutic discovery.</p>
+                <div class="hero-metrics" aria-label="Research areas">
+                    <div>Peptide design</div>
+                    <div>Protein engineering</div>
+                    <div>Molecular discovery</div>
+                </div>
+                    <div class="hero-actions">
+                        <!-- <a class="button button-primary" href="Aaron_Feller_Resume.pdf" target="_blank" rel="noopener">View resume <i data-lucide="file-text" aria-hidden="true"></i></a> -->
+                        <a class="text-link" href="#research">Explore research <i data-lucide="arrow-down" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="portrait-frame"><img src="profile.jpeg" alt="Aaron Feller"></div>
+                    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+                    <p class="portrait-note">PhD Candidate<br><strong>UT Austin</strong></p>
+                </div>
+            </section>
 
-        <!-- Guest Lectures & Posters Section -->
-        <section id="talks" class="mb-5">
-            <h2>Research Communication</h2>
-            <ul>
-                <li><strong>Guest Speaker:</strong> UT Austin Biology Talks About Computers, Organisms, and Systems, Fall 2025 - <em>A Deep Learning Approach for Modeling Therapeutic Peptides</em></li>
-                <li><strong>Public Testimony:</strong> Texas Senate Committee on Health and Human Services, Spring 2025 - <em>Opposition to SB 1887, a proposed ban on mRNA vaccine immunization</em></li>
-                <li><strong>Returning Lecturer:</strong> UT Austin Graduate Computational Biology Course, Spring 2025 — <em>Teaching Language Models to Speak Biology</em></li>
-                <li><strong>Project Pitch:</strong> Texas Health Catalyst, Winter 2025 — <em>A machine learning framework for early prediction of post-stroke spasticity to guide intervention strategies</em>.</li>
-                <li><strong>Guest Speaker:</strong> AI LIVE, UT Austin's Year of AI Showcase, Fall 2024 — <em>Interactive Workshop: AI &amp; Eradicating Food Insecurity</em></li>
-                <li><strong>Guest Lecture:</strong> UT Austin Graduate STEM Professional Development Course, Fall 2024 — <em>Harnessing Language Models for Chemical Analysis and Therapeutic Discovery</em></li>
-                <li><strong>Invited Speaker:</strong> KungFu.AI Lunch-and-Learn, Summer 2024 — <em>Transformers in Computational Biology</em></li>
-                <li><strong>Invited Speaker:</strong> UT Austin Core Facilities Conference, Summer 2024 — <em>Bioinformatics Approaches to Natural Peptide Antibiotic Discovery</em></li>
-                <li><strong>Poster Presentation:</strong> Molecular Machine Learning Conference (MoML), Summer 2024, Quebec, Canada — <em>SMILES-based Modeling for Predicting Membrane Penetration of Cyclic Peptides</em></li>
-                <li><strong>Invited Speaker:</strong> UT Austin Biophysics Hang-Out, Spring 2024 — <em>Development of Computational Methods for Discovery and Selection of Therapeutic Peptides</em></li>
-                <li><strong>Guest Lecture:</strong> UT Austin Graduate Computational Biology Course, Spring 2024 — <em>Teaching Language Models to Speak Biology</em></li>
-                <li><strong>Poster Presentation:</strong> Interdisciplinary Life Sciences Graduate Program Annual Retreat, Fall 2023 — <em>Chemical Language Model for Identification of Novel Drug Analogues</em> <strong>(Best Poster Award)</strong></li>            </ul>
-        </section>
-                
-        <!-- Certifications, Awards & Honors Section -->
-        <section id="awards" class="mb-5">
-            <h2>Certifications, Awards & Honors</h2>
-            <ul>
-                <li><strong>Phi Kappa Phi Honor Society</strong>, 2023</li>
-                <li><strong>Best Poster Award</strong>, UT ILS Retreat, 2023</li>
-                <li><strong>CITI Program:</strong> Conflicts of Interest Certification</li>
-                <li><strong>CITI Program:</strong> Biomedical Responsible Conduct of Research Certification</li>
-                <li><strong>Phi Beta Kappa Honor Society</strong>, 2011</li>
-            </ul>
-        </section>
-    
+            <section class="statement section-grid" id="about" aria-labelledby="about-title">
+                <p class="section-label">01 / About</p>
+                <div>
+                    <h2 id="about-title">Biology is full of noise. My work finds the signal hiding inside it.</h2>
+                    <div class="statement-copy">
+                        <p>I work at the intersection of deep learning, knowledge representation, and molecular design. The throughline is simple: build useful models that remain connected to the physical systems they describe.</p>
+                        <p>My research spans protein engineering, therapeutic peptide design, and small-molecule and natural-product discovery. I build molecular representations that make difficult biological questions more tractable.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="research-band" id="research" aria-labelledby="research-title">
+                <div class="section-heading">
+                    <p class="section-label">02 / Research</p>
+                    <h2 id="research-title">From molecular language <br>to useful design.</h2>
+                </div>
+                <div class="research-grid">
+                    <article class="research-card">
+                        <span class="card-index">01</span><i data-lucide="waves" aria-hidden="true"></i>
+                        <h3>Therapeutic peptide representations</h3><p>Developing SMILES-based and structural-ensemble representations for therapeutic peptides, with an emphasis on molecular properties, membrane diffusion, and design.</p>
+                    </article>
+                    <article class="research-card">
+                        <span class="card-index">02</span><i data-lucide="wrench" aria-hidden="true"></i>
+                        <h3>Protein engineering</h3><p>Evaluating protein encoders across deep mutational scanning data to understand where zero-shot prediction helps and fails. <strong>New high-performing models are in development.</strong></p>
+                    </article>
+                    <article class="research-card">
+                        <span class="card-index">03</span><i data-lucide="microscope" aria-hidden="true"></i>
+                        <h3>Molecular discovery</h3><p>Using chemical similarity and genome-scale bioinformatics to discover useful small molecules, natural products, and antibiotic peptide scaffolds.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="publications section-grid" id="publications" aria-labelledby="publications-title">
+                <div>
+                    <p class="section-label">03 / Publications</p><h2 id="publications-title">Research in print</h2>
+                    <p class="section-aside">A selection of peer-reviewed work spanning molecular machine learning, peptide chemistry, and natural product discovery.</p>
+                    <a class="text-link" href="https://scholar.google.com/citations?user=RYgWh_4AAAAJ" target="_blank" rel="noopener">Google Scholar <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                </div>
+                <ol class="publication-list">
+                    <li><a href="https://openreview.net/forum?id=PKFtafpZFI" target="_blank" rel="noopener"><span class="publication-year">2026</span><span><strong>Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling</strong><em>ICML Workshop on Graph Foundation Models</em></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://pubs.acs.org/doi/abs/10.1021/acs.jcim.6c00652" target="_blank" rel="noopener"><span class="publication-year">2026</span><span><strong>Scaling SMILES-Based Chemical Language Models for Therapeutic Peptide Engineering</strong><em>Journal of Chemical Information and Modeling</em></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.biorxiv.org/content/10.64898/2026.06.04.730121v2" target="_blank" rel="noopener"><span class="publication-year">2026</span><span><strong>Overestimating zero-shot fitness prediction: Broad benchmarks mask local failures and practical limitations</strong><em>bioRxiv</em></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://doi.org/10.1021/acs.jcim.4c01441" target="_blank" rel="noopener"><span class="publication-year">2025</span><span><strong>Peptide-Aware Chemical Language Model Successfully Predicts Membrane Diffusion of Cyclic Peptides</strong><em>Journal of Chemical Information and Modeling</em></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.nature.com/articles/s41467-025-61151-z" target="_blank" rel="noopener"><span class="publication-year">2025</span><span><strong>Antibacterial Microcins are Ubiquitous and Functionally Diverse Across Bacterial Communities</strong><em>Nature Communications</em></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://doi.org/10.1016/j.patter.2023.100865" target="_blank" rel="noopener"><span class="publication-year">2023</span><span><strong>Using alternative SMILES representations to identify novel functional analogues</strong><em>Patterns</em></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a></li>
+                </ol>
+            </section>
+
+            <section class="experience-section" aria-labelledby="experience-title">
+                <div class="section-heading"><div><p class="section-label">04 / In the lab &amp; beyond</p><h2 id="experience-title">Building a generous technical community.</h2></div></div>
+                <div class="timeline">
+                    <article><p>2022 — Present</p><div><h3>Graduate Research Assistant</h3><span>The University of Texas at Austin</span></div><p>Advancing AI-guided protein engineering with the Wilke Lab and collaborators across computational biology and molecular engineering.</p></article>
+                    <article><p>2024 - Present</p><div><h3>Research Collaboration</h3><span>Novo Nordisk A/S</span></div><p>Contributed to research on peptide-specific molecular representations and predictive modeling for therapeutic peptide engineering.</p></article>
+                    <article><p>2023 — 2026</p><div><h3>Co-Founder &amp; Organizer</h3><span>Biology &amp; Machine Learning Society</span></div><p>Built a student-led forum for AI in biology and organized an international protein engineering hackathon with more than 40 teams.</p></article>
+                    <article><p>2025 — Present</p><div><h3>Community Contributions</h3><span>Volunteered Time</span></div><p>Contributing to and reviewing for Terminal Bench Science, supporting data analysis for Nucleate HQ, and mentoring post-bacc students.</p></article>
+                </div>
+            </section>
+
+            <section class="skills-section" aria-labelledby="skills-title">
+                <p class="section-label">05 / Toolkit</p><h2 id="skills-title">Methods &amp; tools</h2>
+                <div class="skills-grid">
+                    <div><span>01</span><h3>Modeling</h3><p>Transformers · GNNs · Transfer Learning · Meta Learning · Probabilistic Modeling · Model Evaluation</p></div>
+                    <div><span>02</span><h3>Scientific computing</h3><p>Python · PyTorch · Lightning · RDKit · NumPy · Pandas · R</p></div>
+                    <div><span>03</span><h3>Infrastructure</h3><p>HPC · Slurm · TACC · AWS · git · reproducible data pipelines</p></div>
+                    <div><span>04</span><h3>Communication</h3><p>Technical writing · LaTeX · teaching · scientific visualization · conversational Spanish</p></div>
+                </div>
+            </section>
+
+        </main>
+        <footer><span>© 2026 Aaron Feller</span><div class="footer-links"><a href="https://github.com/AaronFeller" target="_blank" rel="noopener">GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="https://linkedin.com/in/aaronleefeller" target="_blank" rel="noopener">LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="mailto:aaronleefeller@gmail.com">Email <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="#top">Top <i data-lucide="arrow-up" aria-hidden="true"></i></a></div></footer>
     </div>
-    
-    <footer class="text-center py-4 bg-dark text-white mt-5">
-        <p>&copy; 2025 Aaron Feller. Currently in the terminal.</p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
